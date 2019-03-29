@@ -1,0 +1,80 @@
+<!--pages/mine/mine.wxml-->
+<!-- header -->
+<view class='user-head'>
+  <image src='../../images/mine-bg.jpg' class='mine-bg'></image>
+  <view class='user-head-pic-wrap'>
+    <image src='{{userInfo.avatarUrl}}' class='user-head-pic'></image>
+  <text class='user-name'>{{userInfo.nickName}}</text>
+  </view>
+</view>
+<!-- nav -->
+<view class='user-nav'>
+  <view class='nav-list'>
+    <navigator url='/pages/memberTwo/memberTwo' hover-class='none' >
+      <image src='../../images/collect1-icon.png'></image>
+      <view class='nav-name'>会员中心</view>
+    </navigator>
+  </view>
+  <view class='nav-list'>
+    <navigator url='/pages/orders/orders' hover-class='none'>
+      <image src='../../images/order-icon.png' class='order-pic'></image>
+      <view class='nav-name'>全部订单</view>
+    </navigator>
+  </view>
+  <!-- <view class='nav-list'>
+    <navigator url='/pages/cancel/cancel' hover-class='none'>
+      <image src='../../img/return-icon.png'></image>
+      <view class='nav-name'>退货</view>
+    </navigator>
+  </view> -->
+  <view class='nav-list'>
+    <navigator url='/pages/register/register' hover-class='none'>
+      <image src='../../images/appraise-icon.png'></image>
+      <view class='nav-name'>会员认证</view>
+      </navigator>
+  </view>
+</view>
+
+<!-- option-list -->
+
+<view class='option-cont'>
+   <view class='option-list' bindtap='toMember'>
+      <view class='left-list'>
+        <image src='../../images/service-icon.png'></image>
+        <text class='option-name'>会员中心</text>
+      </view>
+      <view class='right-list'>
+        <image src='../../images/enter-icon.png'></image>
+      </view>
+    </view> 
+    <view class='option-list' bindtap='toRegister'>
+      <view class='left-list'>
+        <image src='../../images/about-icon.png'></image>
+        <text class='option-name'>会员认证</text>
+      </view>
+      <view class='right-list'>
+        <image src='../../images/enter-icon.png'></image>
+      </view>
+    </view> 
+    <view class='option-list' bindtap='toOrder'>
+      <view class='left-list'>
+        <image src='../../images/sign-icon.png'></image>
+        <text class='option-name'>订单记录</text>
+      </view>
+      <view class='right-list'>
+        <image src='../../images/enter-icon.png'></image>
+      </view>
+    </view> 
+    
+ <!-- <navigator url='/pages/about/about' hover-class='none'>
+    <view class='option-list'>
+      <view class='left-list'>
+        <image src='../../images/about-icon.png'></image>
+        <text class='option-name'>关于我们</text>
+      </view>
+      <view class='right-list'>
+        <image src='../../images/enter-icon.png'></image>
+      </view>
+    </view>
+  </navigator>-->
+</view>

@@ -1,0 +1,91 @@
+/* pages/activityDetail/activityDetail.wxss */
+/* pages/detail/detail.wxss */
+
+.detailContainer{
+  background:#f4f4f4;
+  padding: 0rpx;
+  height: 100%;
+  
+}
+.One{
+  padding: 2rpx;
+  width: 100%;
+  height:400rpx;
+}
+ .One image{
+  border-color: #000;
+  border-radius: 5px;
+  width: 94%;
+  margin-left: 3%;
+  margin-top: 20rpx;
+  height: 100%;
+}
+.two{
+  padding: 2rpx;
+  width: 94%;
+  border-bottom: 1rpx solid rgb(74, 102, 126);
+  margin-left: 3%;
+}
+
+.twoCompany{
+  margin-top: 5%;
+  margin-left: 2%;
+  color: rgb(161, 155, 155);
+}
+.activity_date{
+  margin-top: 20rpx;
+  text-align:right ;
+  margin-right: 2%;
+  margin-bottom: 20rpx;
+}
+.activity_date text{
+  font-size: 35rpx;
+}
+.company{
+  color: rgb(98, 139, 172);
+  margin-top: 20rpx;
+  font-size: 48rpx;
+  font-weight: bold;
+  margin-left: 3%;
+}
+.three{
+  border: 10rpx solid  rgb(98, 139, 172);
+  margin-top: 20rpx;
+  border-width: 2rpx;
+  width: 94%;
+  margin-left: 3%;
+  border-radius: 5px;
+  
+}
+.threeOne{
+  margin-top: 20rpx;
+  width: 94%;
+  margin-left: 3%;
+  font-size: 35rpx;
+  text-indent: 32rpx;
+  margin-bottom: 20rpx;
+}
+.threeTwo{
+  margin-top: 20rpx;
+  width: 94%;
+  margin-left: 3%;
+  font-size: 35rpx;
+  
+  margin-bottom: 20rpx;
+  color:  rgb(161, 155, 155);
+}
+/*底部结尾*/
+
+.orderbottom-title {
+  background: #f4f4f4;
+  margin-top: 50rpx;
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+.ordermain-title {
+  font-size: 34rpx;
+  font-weight: bold;
+  letter-spacing: 2rpx;
+  color: #333;
+}

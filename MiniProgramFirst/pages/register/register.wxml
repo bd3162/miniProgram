@@ -1,0 +1,17 @@
+<view class="container">
+    <view class="form-box">
+      
+    	<view class="form-item">
+    		<!-- <input class="username"type='text' name='verif' value="{{username}}" bindinput="bindUsernameInput" placeholder="验证码" auto-focus/> -->
+        <input class="username"type='text'  value="{{verif}}" bindinput="bindVerif" placeholder="验证码"/>
+    	</view>
+
+
+    	<button type="default"  class="login-btn" bindtap="startLogin">验证</button>
+    
+    <!-- <button class="verif" bindtap="verifi"></button>
+    <form bindsubmit="formSubmit">  </form>
+    -->
+
+    </view>
+</view>

@@ -1,0 +1,98 @@
+/* pages/memberTwo/memberTwo.wxss */
+page {
+  background-color: #f8f8f8;
+}
+/* 头部 */
+
+.user-head {
+  position: relative;
+  height: 400rpx;
+  
+}
+
+.user-head .mine-bg {
+  border-color: #000;
+  border-radius: 10px;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 30rpx;
+  height: 100%;
+  box-shadow: 3px 2px 2px rgb(108, 135, 146);
+}
+.user-head .user-head-pic-wrap {
+  position: absolute;
+  left:10%;
+  top: 25%;
+  display: flex;
+}
+.user-head .user-head-pic  {
+  width: 100rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  
+}
+.movie_detail{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-left: 30rpx;
+}
+.movie_name{
+  width: 90%;
+  font-size: 32rpx;
+  color: #000; 
+  /* 不换行，超出部分隐藏掉,用……代替 */
+  
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.movie_year{
+  font-size: 28rpx;
+  color: #000;
+  margin: 8rpx 0ex;
+}
+.user-name {
+  display: block;
+  margin-top: 16rpx;
+  font-size: 32rpx;
+  color: #fff;
+  width: 150rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.two{
+  position: absolute;
+  left:10%;
+  bottom: 5%;
+  display: flex;
+}
+.three{
+   position: absolute;
+  right:10%;
+  bottom: 35%;
+  display: flex;
+  font-size: 48rpx;
+}
+.four{
+  margin-top: 30rpx;
+  margin-left: 3%;
+  width: 94%;
+  height: 50rpx;
+  display: flex;
+  flex-direction: row;
+}
+.fourOne{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-left:15% ;
+  align-items: center;
+}
+.fourTwo{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-left: 10%;
+  align-items: center;
+}

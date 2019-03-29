@@ -1,0 +1,41 @@
+<!--pages/orders/orders.wxml-->
+<wxs module="filters" src="../homePage/addmul.wxs"></wxs>
+<view class='orserContainer'>
+<block wx:for-items="{{orderItems}}" wx:key="name">
+<!--灰色部分l-->
+ <view class='ordertop'></view>
+ <view class="welfare-container"> 
+     <view class="category-title">
+        <text class="title">SCRM锦鲤店</text>
+        <view class="line_name">
+         <text>订单编号： {{item.asin}}</text>
+        </view>
+      </view>
+      <text class='order_status'>已付款</text>  
+ </view>
+ <view class='order_line'></view>
+ <view class='two'>
+       <view class='moviesContainer'>
+          <image class='movieImag'src='{{item.imUrl}}'></image>
+          <view  class='movie_detail'>
+              <text class='movie_name'>{{item.title}}</text>
+            <!--  <text class='movie_year'>年份:{{item.year}}</text>-->
+             <!-- <text class='movie_director'>导演:{{item.directors[0].name}} </text>-->
+          </view>
+           <view class='order_number'>
+          <text class='order_price'>￥{{filters.toFix(item.price)}}</text>
+          <text class='order_num'>x {{item.num}}</text>
+          </view>
+        </view>
+   </view>
+   <view class='threeTwo'>实付 ￥{{filters.toFix(item.totalPrice)
+}}</view>
+   </block> 
+    <view class='orderbottom-title'>
+        <view class='ordermain-title'>SCRM锦鲤店</view>
+        <view class='ordersub-head'>SCRM JinLi</view>
+    </view>
+ </view>
+
+
+

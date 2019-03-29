@@ -1,0 +1,28 @@
+<!--pages/memberTwo/memberTwo.wxml-->
+<!-- header -->
+<view class='user-head'>
+  <image src='../../images/member.jpg' class='mine-bg'></image>
+  <view class='user-head-pic-wrap'>
+    <image src='../../images/jinli.png' class='user-head-pic'></image>
+    <view  class='movie_detail'>
+      <text class='movie_name'>{{userInfo.nickName}}</text>
+      <text class='movie_year'>{{userInfo.city}}</text>
+    </view>
+  </view>
+  <view class='two'>
+    <text >卡号：{{userItem.verif}}</text>
+  </view>
+  <view class='three'>
+     <text>SCRM锦鲤会员</text>
+  </view>
+  <view class='four'>
+    <view class='fourOne'>
+      <text>可用积分</text>
+      <text>{{userItem.memb_points}}</text>
+    </view>
+    <view class='fourTwo'>
+      <text>优惠券</text>
+      <text>0张</text>
+    </view>
+  </view>
+</view>

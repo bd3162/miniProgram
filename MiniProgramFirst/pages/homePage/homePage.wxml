@@ -1,0 +1,64 @@
+<!--pages/homePage/homePage.wxml
+http://ecx.images-amazon.com/images/I/41tisldemKL.jpg-->
+<wxs module="filters" src="addmul.wxs"></wxs>
+<view class='container'>
+ 
+<swiper catchtap='carouselToDetail' indicator-dots='true'indicator-color='#002222'indicator-active-color='white'>
+
+  <!--显示指示点，以及指示点的颜色，轮播图因为有四张，所以复制四个swiper-item-->
+  <block wx:for-items="{{activityItems}}" wx:key="{{item.id}}">
+    <swiper-item>
+      <image data-index='{{item.id}}' src='{{item.activ_img}}'></image>
+    </swiper-item>
+    </block>
+    <!-- <swiper-item>
+      <image data-index='1' src='http://ecx.images-amazon.com/images/I/41ASqgfVG-L._SY300_.jpg'></image>
+    </swiper-item>
+     <swiper-item>
+      <image data-index='2' src='http://ecx.images-amazon.com/images/I/51u6etnwM6L._SY300_.jpg'></image>
+    </swiper-item>
+     <swiper-item>
+      <image data-index='3' src='{{activityItems[4].activ_img}}'></image>
+    </swiper-item>
+    <swiper-item>
+      <image data-index='4' src='{{activityItems[4].activ_img}}'></image>
+    </swiper-item>-->
+  </swiper>
+
+  <!--福利专场 start-->
+<view class="welfare-container" catchtap='twoRequest'> 
+  <view class="category-title">
+    <text class="title"  >每日推荐</text>
+    <view class="line_name">
+      <text>每天早10晚8准时上新</text>
+    </view>
+  </view>  
+  <scroll-view scroll-y="true">
+      <view class="welfares">
+         <block wx:for-items="{{goodsItems}}" wx:key="name">
+          <view class="welfares-good" catchtap="catchTapCategory" data-type="{{item.name}}" data-typeid="{{item.typeId}}">
+            <view>
+              <image src="{{item.imUrl}}" class="welfares-image" mode="scaleToFill"/> 
+            </view>
+            <view class="product-name">
+              <text>{{item.title}}</text>
+            </view>
+            <view class="product-price-wrap">
+              <p class="product-price-new">￥{{filters.toFix(item.price*8/10)}}</p>  
+              <p class="product-price-old">￥{{filters.toFix(item.price)}}</p> 
+              <p class="discount">8折</p>  
+            </view>
+            
+          </view>
+        </block> 
+      </view>
+  </scroll-view>  
+</view> 
+<!--福利专场 end-->
+  <view>
+     <view class='orderbottom-title'>
+        <view class='ordermain-title'>SCRM锦鲤店</view>
+        <view class='ordersub-head'>SCRM JinLi</view>
+    </view>
+  </view>
+</view>
